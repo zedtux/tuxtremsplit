@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Icon=/usr/share/icons/hicolor/128x128/apps/tuxtremsplit.png
+Version=4.0.0
+Exec=tuxtremsplit
+Terminal=false
+Type=Application
+Categories=Utility;
+MimeType=application/x-extension-xtm
+StartupNotify=true
+Name=TuXtremSplit
+Comment=Join your Xtremsplit files and split your big file to some small xtm files.
+Name[fr]=TuXtremSplit
+Comment[fr]=Joindre vos fichiers Xtremsplit et découpez vos gros fichiers en petit fichiers xtm.

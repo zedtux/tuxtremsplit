@@ -1,0 +1,66 @@
+tuxtremsplit (4.0.0.beta4) UNRELEASED; urgency=low
+
+  * Fixed issue when joining SFX file
+  * Unified UI in order to have same Execution button for join and split
+
+ -- Guillaume Hain <zedtux@zedroot.org>  Sat, 28 Jan 2012 18:52:41 +0100
+
+tuxtremsplit (4.0.0.beta3) UNRELEASED; urgency=low
+
+  * Implemented MainWindow (when passing no arguments) to split and join files
+
+ -- Guillaume Hain <zedtux@zedroot.org>  Sat, 28 Jan 2012 17:16:30 +0100
+
+tuxtremsplit (4.0.0.beta2) UNRELEASED; urgency=low
+
+  * Fixed symbolic link creation with setup.py
+  * Improved Debian package creation in order to integrate TuXtremSplit to GNOME
+  * Removed 'Pause' button
+  * Use of Threads that could raise exceptions
+  * Show MD5 check when joining file with MD5 sums and option is enabled
+  * Show more error messages
+
+ -- Guillaume Hain <zedtux@zedroot.org>  Mon, 23 Jan 2012 18:48:25 +0100
+
+tuxtremsplit (4.0.0.beta1) UNRELEASED; urgency=low
+
+  * Renamed back to tuxtremsplit for GTK2 implementation
+  * Updated all project files in order to fix Gedit warnings
+  * Feature: GTK2 action window to show current process status
+  * Feature: Integrate TuXtremSplit to GNOME (Mime-type, icon, ...)
+
+ -- Guillaume Hain <zedtux@zedroot.org>  Thu, 19 Jan 2012 19:04:12 +0100
+
+tuxtremsplit-console (4.0.0.alpha4) UNRELEASED; urgency=low
+
+  * Moved applicatino to tuxtremsplit-console
+
+ -- Guillaume Hain <zedtux@zedroot.org>  Thu, 12 Jan 2012 20:22:41 +0100
+
+tuxtremsplit (4.0.0.alpha4-0ubuntu1) UNRELEASED; urgency=low
+
+  * Feature: MD5 checksum when -m argument passed
+  * Feature: Xtremsplit SFX (auto extract) implemented when joining and spliting with argument -x
+  * Optimization: Code is more PEP 8 compliant
+
+ -- Guillaume Hain <zedtux@zedroot.org>  Wed, 11 Jan 2012 19:19:34 +0100
+
+tuxtremsplit (4.0.0.alpha3-0ubuntu1) UNRELEASED; urgency=low
+
+  * Feature: Check destination free space before executing join or split actions
+
+ -- Guillaume Hain <zedtux@zedroot.org>  Sat, 07 Jan 2012 00:18:01 +0100
+
+tuxtremsplit (4.0.0.alpha2-0ubuntu1) UNRELEASED; urgency=low
+
+  * Implemented actions Join and Split (split per size of count)
+  * Compatibile from at least Python 2.5 to 3.2
+  * Filename in UTF-8 are now supported (issue #786680)
+
+ -- Guillaume Hain <zedtux@zedroot.org>  Wed, 04 Jan 2012 19:41:07 +0100
+
+tuxtremsplit (4.0.0.alpha1-0ubuntu1) UNRELEASED; urgency=low
+
+  * Initial release
+
+ -- Guillaume Hain <zedtux@zedroot.org>  Thu, 22 Dec 2011 20:17:23 +0100

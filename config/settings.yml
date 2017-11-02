@@ -1,0 +1,61 @@
+name: "TuXtremSplit"
+executable_name: "tuxtremsplit"
+version: "4.0.0.beta3"
+short_version: "4b3"
+description: "TuXtremSplit - A Linux Xtremsplit file tool."
+author: "Guillaume Hain"
+author_email: "zedtux@zedroot.org"
+homepage: "http://tuxtremsplit.zedroot.org/"
+licence: "%s is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.\n\ %s is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\ You should have received a copy of the GNU General Public License along with %s; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+xtm_header:
+    size: 104
+    application_name_lenght:
+        position: 0
+        size: 1
+    application_name:
+        position: 1
+        size: 20
+    application_version_lenght:
+        position: 21
+        size: 1
+    application_version:
+        position: 22
+        size: 4
+    creation_date:
+        position: 36
+        size: 4
+    original_filename_lenght:
+        position: 40
+        size: 1
+    original_filename:
+        position: 41
+        size: 50
+    md5:
+        position: 91
+        size: 1
+    number_of_parts:
+        position: 92
+        size: 4
+    original_filesize:
+        position: 96
+        size: 16
+xtm_sfx:
+    header_size: 305664
+    footer_size: 24
+    application_name_lenght:
+        position: 0
+        size: 1
+    application_name:
+        position: 1
+        size: 6
+        value: "XTMSFX"
+    application_version_lenght:
+        position: 7
+        size: 1
+    application_version:
+        position: 8
+        size: 4
+        value: "1.2"
+    part_size:
+        position: 16
+        size: 8

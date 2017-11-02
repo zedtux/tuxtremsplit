@@ -1,0 +1,11 @@
+Name: Nautilus Restart Required
+Name-fr: Redémarrage de Nautilus requis !
+Priority: High
+Command: /bin/bash /usr/share/tuxtremsplit/nautilus-restart
+Terminal: False
+DontShowAfterReboot: True
+DisplayIf: pgrep -x nautilus -U $(id -u) > /dev/null
+Description: TuXtremSplit requires Nautilus to be restarted to function
+ properly.
+Description-fr: TuXtremSplit a besoin que Nautilus soit redémarré pour que toutes
+ les fonctionnalités soient active.

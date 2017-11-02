@@ -1,0 +1,9 @@
+#!/bin/sh 
+set -e
+
+. /lib/lsb/init-functions
+
+log_daemon_msg "Restarting Nautilus"
+nautilus --quit
+nohup nautilus -n > /dev/null 2>&1 
+log_end_msg "$?"

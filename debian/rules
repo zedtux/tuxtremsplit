@@ -1,0 +1,44 @@
+#!/usr/bin/make -f
+
+build:
+
+build-arch: build
+
+build-indep: build
+
+clean:
+	dh_testdir
+	dh_testroot
+
+	rm -rf build
+	dh_clean install-stamp
+
+install: install-stamp
+
+install-stamp:
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+
+	python setup.py install --prefix=/usr --root=$(CURDIR)/debian/tuxtremsplit
+	touch $@
+
+binary-arch:
+
+binary-indep: install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+#	dh_installman tuxtremsplit.1
+	dh_pysupport
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install
