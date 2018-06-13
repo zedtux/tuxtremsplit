@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
-  <mime-type type="application/x-extension-xtm">
-    <comment>Xtremsplit File</comment>
-    <comment xml:lang="fr">Fichier Xtremsplit</comment>
-    <glob pattern="*.xtm"/>
-  </mime-type>
-</mime-info>
